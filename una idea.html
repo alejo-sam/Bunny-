@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Te animás?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #ffe4ec, #fff0f9);
+      color: #3a2c35;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      transition: background 0.4s ease;
+    }
+
+    h2 {
+      font-size: 22px;
+      white-space: pre-line;
+      max-width: 620px;
+      margin-bottom: 50px;
+      line-height: 1.8;
+      font-weight: 600;
+    }
+
+    .botones {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 34px;
+      font-size: 17px;
+      border: none;
+      border-radius: 28px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    button:hover {
+      transform: scale(1.07);
+    }
+
+    .btn-si {
+      background: linear-gradient(to right, #ff80b5, #ff5e91);
+      color: white;
+      box-shadow: 0 4px 12px rgba(255, 105, 135, 0.3);
+    }
+
+    .btn-no {
+      background: linear-gradient(to right, #f8a69f, #f48981);
+      color: white;
+      box-shadow: 0 4px 12px rgba(244, 143, 114, 0.3);
+    }
+
+    .mensaje-final {
+      display: none;
+      font-size: 19px;
+      line-height: 1.8;
+      background: #ffffffc2;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+      white-space: pre-line;
+      max-width: 700px;
+      animation: fadeIn 0.6s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div id="contenido">
+    <h2>
+Si llegaste hasta acá… bien jugado jeje. Espero que te hayas divertido en ese juego.
+
+Ahora quería preguntarte:
+no sé si cambiaste de opinión o si llegás a ver algún cambio en mí…
+
+¿pero me darías una oportunidad?
+No sé, siento que ya soy de esos que no se rinden o de los que son molestos ya.
+
+Si no te da curiosidad, podés cerrar tranqui y volver a jugar de nuevo.
+
+postdata; no puedo saber a si que bueno
+    </h2>
+    <div class="botones">
+      <button class="btn-si" onclick="mostrarMensajeFinal()">Sí</button>
+      <button class="btn-no" onclick="window.location.href='https://alejo-sam.github.io/Bunny-/'">No</button>
+    </div>
+  </div>
+
+  <div id="mensaje" class="mensaje-final">
+    
+    Sé que no fue fácil… o capaz fui insistente. Pero gracias por decir que sí, de verdad.
+
+Esta vez quiero que lo vivamos distinto. No te digo una promesa vacía, porque sé que tengo mucho que trabajar con toda esto de transno evitativa/ansiosa que arrastro, y que por eso pasaron cosas.
+
+Pero también sé que hoy tengo los ojos abiertos, y soy alguien con claridad.
+
+Vos… no sé si esto ya es un nosotros o no j pero bueno, acá estoy, con ganas de construir algo sano esta vez .
+
+  </div>
+
+  <script>
+    function mostrarMensajeFinal() {
+      document.getElementById('contenido').style.display = 'none';
+      document.getElementById('mensaje').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+  
